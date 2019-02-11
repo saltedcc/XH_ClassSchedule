@@ -1,0 +1,46 @@
+<!--index.wxml-->
+
+
+<view class='btop'style="">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{totalweek_}}">
+    <view class="picker">
+      <view  wx:if="{{condition==1}}" style='display:flex; font-size:15pt;'>{{totalweek[week]}}<view class='iconfont icon-tubiaozhizuo-' style='color:red;margin-top:15rpx;'></view></view>
+      <view  wx:if="{{condition==2}}" style='display:flex; font-size:15pt;'>{{totalweek[index]}}</view>
+    </view>
+  </picker>
+  
+</view>
+
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view style="width:730rpx;display:flex;">
+    <view style="color:#7cba23;">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}" class="left">
+        {{item}}
+      </view>
+    </view>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}">
+      <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==4||index==10?'red':'lightgray'}};">
+      </view>
+    </view>
+  
+
+
+      <view wx:for="{{wlist}}" wx:for-index="idx">
+          <view wx:if="{{week>=item.cwstart-1&&week<=(item.cwend)}}">
+            <view  class="flex-item kcb-item" bindtap='showCardView' data-statu="open" data-index="{{index}}" data-id="{{idx}}{{index}}" data-cname="{{item.cname}}" data-type="{{item.ctype}}" data-cteacher="{{item.cteacher}}" data-croom="{{item.croom}}" data-cstart="{{item.cstart}}" data-cend="{{item.cend}}" data-cwstart="{{item.cwstart}}" data-cwend="{{item.cwend}}" data-color = "{{random.random_num()}}" style="margin-left:{{((item.day)-1)*100}}rpx;margin-top:{{(item.cstart-1)*100+5}}rpx;height:{{(item.cend-item.cstart+1)*100-5}}rpx;background-color:{{colorArrays[idx%7]}}">
+              <view class="smalltext " style="-webkit-line-clamp:{{(item.cend-item.cstart+1)*2}};" >{{item.cname}}
+              </view>
+          </view>    
+      </view>
+  </view>
+
+
+</view>
+
+<!-- <view class='bottom'>
+<view style='color:gray; font-size:10pt;'>注：数据仅供参考，一切以教务部门为准</view>
+</view> -->
+</scroll-view>

@@ -1,0 +1,63 @@
+@import "../../helper/iconf.wxss";
+
+page {
+  background-color:#f5f5f5;
+
+}
+
+.moren{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10rpx;
+  height: 50rpx;
+  line-height: 40rpx;
+  padding-bottom: 10rpx;
+}
+
+.moren_2 {
+  margin-left: 30rpx;
+  margin-bottom:200rpx;
+  font-size: 30rpx;
+}
+
+.moren_21 {
+  margin-left: 30rpx;
+  margin-bottom:200rpx;
+  color: gray;
+  font-size: 30rpx;
+}
+
+.moren_22 {
+  margin-left: 30rpx;
+  margin-bottom:200rpx;
+  font-size: 40rpx;
+}
+.top {
+  background-color:#ffffff;
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+}
+
+.first_k {
+  font-size: 14pt;
+  margin-top: 25rpx;
+}
+.second_k {
+  background-color:#ffffff;
+  /* height:200rpx; */
+  margin-top:15rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25rpx;
+}
+
+.bottom {
+  position:fixed;
+  bottom:0rpx;
+  display:flex;
+  width:100%;
+  justify-content:center;
+}

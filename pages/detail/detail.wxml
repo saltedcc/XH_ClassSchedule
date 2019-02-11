@@ -1,0 +1,37 @@
+<view class='top'>
+  <view class='first_k'>
+    <view class='cname moren'>
+      <view class='moren_22'>{{class_name}}</view>
+      <view class='moren_22'>（{{class_type}}）</view>
+    </view>
+  </view>
+  <view class='second_k'>
+      <view class='ctype moren'>
+        <view><view class='iconfont icon-jiaoyu' style='color:red;'></view></view>
+        <view class='moren_21'>老师</view>
+        <view class='moren_2'>{{class_cteacher}}</view>
+      </view> 
+      <view class='ctype moren'>
+        <view><view class='iconfont icon-icon-' style='color:#80d3e3;'></view></view>
+        <view class='moren_21'>教室</view>
+        <view class='moren_2'>{{class_room}}</view>
+      </view>
+      <view class='ctype moren'>
+        <view><view class='iconfont icon-kechengbiao' style='color:#5ecd94;'></view></view>
+        <view class='moren_21'>周数</view>
+        <view class='moren_2'>{{class_cwstart}}-{{class_cwend}}周</view>
+      </view>
+      <view class='ctype moren'>
+        <view><view class='iconfont icon-shijian' style='color:#e9806e;'></view></view>
+        <view class='moren_21'>节数</view>
+        <view class='moren_2'>{{class_cstart}}-{{class_cend}}节</view>
+      </view>
+  </view> 
+</view>
+
+<view class='bottom'>
+<view style='color:gray; font-size:10pt;'>注：数据仅供参考，一切以教务部门为准</view>
+</view>
+
+
+

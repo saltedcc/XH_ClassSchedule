@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "课表查查",
+    "navigationBarBackgroundColor": "#34bf49",
+    "navigationBarTextStyle": "white"
+  }
+}
